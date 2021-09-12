@@ -1,24 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import MonthlySales from './components/MonthlySales';
+import CloudStorage from './components/CloudStorage';
+import Inbox from './components/Inbox'
+import Projects from './components/Projects';
+import NewOrders from './components/NewOrders';
+import NavBar from './components/NavBar';
+import Welcome from './components/Welcome';
+import SideBar from './components/SideBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div class="bg-light main-content row">
+
+
+
+      
+
+      <div class="col-lg-3"><SideBar/></div> 
+
+      <div class="col-lg-9">
+          <NavBar/>
+          <Welcome/>
+          <NewOrders/>
+
+
+      <div class="row">
+          <MonthlySales />
+          <CloudStorage />
+      </div>
+
+      <div class="row mt-5">
+          <Inbox/>
+          <Projects/>
+      </div>
+      </div>
+      </div>
+    
   );
 }
 
