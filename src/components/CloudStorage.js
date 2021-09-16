@@ -5,8 +5,9 @@ const CloudStorage = () => {
     const percentage = 78
 
     return (
-         <div class="col-lg-7 col-xl-4" >
-                <div class="card p-3  h-100">                  
+         <div class=" col-xl-4 grid-margin stretch-card" >
+                <div class="card p-3 h-100"> 
+                <div class="card-body">              
                   <div class="d-flex justify-content-between align-items-baseline mb-2 card-title">
                   <h6 >Cloud storage</h6>
                   <div class="dropdown mb-2">
@@ -15,8 +16,7 @@ const CloudStorage = () => {
                     </button>
                   </div>
                 </div>
-<div class="mx-auto" >
-<div style={{width:"200px",height:"200px"}}>
+<div class="m-auto">
 <CircularProgressbar
   value={percentage}
   text={`${percentage}%`}
@@ -61,8 +61,8 @@ const CloudStorage = () => {
   }}
 />   
 </div>  
-</div>
-<div class="row mt-4 mb-3">
+</div> 
+<div class="row bg-white card-footer">
                   <div class="col-6 d-flex justify-content-end">
                     <div>
                       <label class="d-flex align-items-center justify-content-end tx-10 text-uppercase font-weight-medium">Total storage <span class="p-1 ml-1 rounded-circle bg-primary-muted"></span></label>
@@ -79,6 +79,7 @@ const CloudStorage = () => {
                   <button class="btn btn-primary btn-block">Upgrade storage</button>
                   </div>
                </div> 
+                 
 
     );
 };

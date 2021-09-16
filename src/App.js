@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'; 
 import MonthlySales from './components/MonthlySales';
 import CloudStorage from './components/CloudStorage';
 import Inbox from './components/Inbox'
@@ -8,33 +8,37 @@ import NavBar from './components/NavBar';
 import Welcome from './components/Welcome';
 import SideBar from './components/SideBar';
 
+
 function App() {
   return (
-    <div class="bg-light main-content row">
+  <div>
+    <NavBar/>
+    <div class="main-content container-fluid bg-light" style={{paddingTop:"100px"}}>
 
-
-
-      
-
-      <div class="col-lg-3"><SideBar/></div> 
-
-      <div class="col-lg-9">
-          <NavBar/>
+      {/*<div class="col-lg-2 col-4">
+        <SideBar/>
+      </div> 
+      // removed the fixed side bar to make responsive menu buttton
+      */}
+      <div>
+        <div>
           <Welcome/>
           <NewOrders/>
-
-
-      <div class="row">
-          <MonthlySales />
+      
+        <div class="row">
+          <MonthlySales /> 
           <CloudStorage />
-      </div>
+        </div>
 
-      <div class="row mt-5">
+        <div class="row mt-5">
           <Inbox/>
           <Projects/>
-      </div>
-      </div>
-      </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+  </div>
     
   );
 }

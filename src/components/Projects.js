@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = () => {
     return (
-            <div class="col-lg-5 col-xl-8">
+            <div class="col-12 col-lg-7">
             <div class="card">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-baseline mb-2">

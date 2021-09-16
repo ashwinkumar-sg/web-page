@@ -4,9 +4,9 @@ import {Bar} from "react-chartjs-2"
 
 const MonthlySales = () => {
     return (
-        <div class="col-lg-7 col-xl-8">
-            <div class="card p-3  ">
-                
+        <div class="col-xl-8 grid-margin stretch-card">
+            <div class="card p-3 h-100 ">
+                <div class="card-body">
                 <div class="card-title d-flex justify-content-between align-items-baseline mb-2">
                     <h6>Monthly sales</h6>
                     <button class="btn p-0" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -17,7 +17,7 @@ const MonthlySales = () => {
                 <p class="text-muted mb-4">Sales are activities related to selling or the number of goods or services sold in a given time period.</p>
 
 
-                <div style={{height:"300px"}}>
+                <div >
                     <Bar data= {{
                             labels: ['jan', 'feb', 'mar', 'apr', 'may', 'june',"july","aug",'sep','act','nov','dec'],
                             datasets: [{
@@ -34,9 +34,10 @@ const MonthlySales = () => {
                                 }
                             }
                         }}
-                        height={200} width={600} 
+                        height={""} width={""} 
                     />
             </div> 
+        </div>
         </div>
     </div>
     );
