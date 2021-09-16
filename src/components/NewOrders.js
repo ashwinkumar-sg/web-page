@@ -11,10 +11,10 @@ const NewOrders = () => {
                                       ])
     return (
       <div class="row mb-5">
-        {cards.map((card)=>
+        {cards.map((card,index)=>
             {
               return(
-                <div class="col-12 col-lg-4 grid-margin stretch-card">
+                <div key={index} class="col-12 col-lg-4 grid-margin stretch-card">
                 <div class="card h-100">
                   <div class="card-body">
                     <div class="d-flex justify-content-between align-items-baseline">

@@ -20,10 +20,10 @@ const Inbox = () => {
                     </button>
                 </div>  
                 </div>     
-    { user.map((user)=>
+    { user.map((user,index)=>
         {
           return(
-                <div class="d-flex flex-column">
+                <div key={index} class="d-flex flex-column">
                   <a href="#" class="d-flex align-items-center border-bottom text-decoration-none p-2">
                     <div class="mx-3">
                       <img class="rounded-circle" alt="100x100" height="50px" weight="50px" src={user.image} data-holder-rendered="true"/>                    

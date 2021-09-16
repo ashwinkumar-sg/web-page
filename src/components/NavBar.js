@@ -10,9 +10,9 @@ const NavBar = () => {
                     <a href="#" class="text-decoration-none" style={{fontWeight: 900,fontSize: "25px",letterSpacing: "-1px",color:"#031a61",textDecoration: "none", backgroundColor: "transparent"}}>
                         Noble<span style={{color: "#727cf5",fontWeight: "300px",fontSize: "25px",fontFamily: "Overpass sans-serif"}}>UI</span>
                     </a> 
-                    <a>
+                
                     <NavbarMenu/>
-                    </a>
+                
             </div>
                
             <div class="col-12 col-md-9 d-flex justify-content-between ">

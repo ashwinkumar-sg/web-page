@@ -20,8 +20,6 @@ function App() {
       </div> 
       // removed the fixed side bar to make responsive menu buttton
       */}
-      <div>
-        <div>
           <Welcome/>
           <NewOrders/>
       
@@ -34,9 +32,6 @@ function App() {
           <Inbox/>
           <Projects/>
         </div>
-
-    </div>
-    </div>
     </div>
   </div>
     
